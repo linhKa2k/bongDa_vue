@@ -1,0 +1,99 @@
+.card-mission {
+  margin: 0 10px;
+}
+.style-slot-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.center-mission {
+  width: 100%;
+  background-color: #5a5a5a;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.title-time-reset {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 5px;
+  background-color: #5a5a5a;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-left: 210px;
+  margin-bottom: 0;
+  color: white;
+}
+
+.ant-card {
+  background: none;
+  border: 0;
+  .ant-card-bordered {
+    margin-bottom: 10px;
+    background-color: white;
+    margin: 5px 5px;
+    border: 0;
+  }
+}
+.title-mission {
+  margin-top: 30px;
+  color: black;
+  .text-title-mission {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .text-info-mission {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 22px;
+  }
+}
+.style-slot {
+  width: 57px;
+  height: 57px;
+}
+.number{
+  position: absolute;
+  top: 35px;
+  left: 8px;
+  font-weight: bold;
+}
+
+.text-title {
+  margin-bottom: 0 !important;
+  font-size: 15px;
+  font-weight: bold;
+}
+.text-limit {
+  font-size: 13px;
+  width: 200px;
+  font-weight: bold;
+}
+.text-content {
+  font-size: 12px;
+  display: block;
+  width: 180px;
+}
+.content{
+  padding-left: 10px;
+}
+.slot-buton {
+  width: 65px;
+  height: 65px;
+  font-size: 11px;
+  border-radius: 15px;
+  border: 0;
+}
+.ant-btn > span {
+  overflow-wrap: break-word;
+  white-space: initial;
+  font-weight: bold;
+}
+.ant-card-head {
+  border-bottom: 0;
+}
+.ant-card-head-title {
+  padding-top: 16px;
+}

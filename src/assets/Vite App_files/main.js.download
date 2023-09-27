@@ -1,0 +1,39 @@
+import Antd, { message } from "/node_modules/.vite/deps/ant-design-vue.js?v=d4895649";
+import { createApp } from "/node_modules/.vite/deps/vue.js?v=d4895649";
+import { createPinia } from "/node_modules/.vite/deps/pinia.js?v=d4895649";
+import "/node_modules/ant-design-vue/dist/antd.css";
+import VWave from "/node_modules/.vite/deps/v-wave.js?v=d4895649";
+
+import DataTable from "/src/components/DataTable.vue";
+
+import App from "/src/App.vue";
+import router from "/src/router/index.js?t=1669190314300";
+import "/src/styles/main.css";
+
+const app = createApp(App);
+
+/* Set global message */
+app.config.globalProperties.$message = message;
+
+app.use(createPinia());
+app.use(router);
+app.use(Antd);
+
+/* Setup ripple */
+app.use(VWave, {
+  directive: "ripple",
+  color: "currentColor",
+  easing: "ease-out",
+  duration: 0.4,
+  dissolveDuration: 0.15,
+  initialOpacity: 0.2,
+  finalOpacity: 0.1,
+  cancellationPeriod: 75,
+  trigger: "auto",
+});
+
+/* Register component below this line */
+app.component("data-table", DataTable);
+/* Register component above this line */
+
+app.mount("#app");
